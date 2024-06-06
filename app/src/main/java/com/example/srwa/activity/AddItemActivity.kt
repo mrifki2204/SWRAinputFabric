@@ -16,7 +16,7 @@ class AddItemActivity : AppCompatActivity() {
         binding = ActivityAddItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonSave.setOnClickListener {
+        binding.buttonAdd.setOnClickListener {
             saveFabricToDatabase()
         }
     }

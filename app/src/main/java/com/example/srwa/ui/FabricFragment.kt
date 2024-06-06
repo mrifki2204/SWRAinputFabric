@@ -35,15 +35,20 @@ class FabricFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         fabricList = arrayListOf()
-        fabricAdapter = FabricAdapter(fabricList)
-        binding.recyclerview.layoutManager = LinearLayoutManager(context)
+        fabricAdapter = FabricAdapter(fabricList, requireContext()) // Menggunakan requireContext()
+        binding.recyclerview.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerview.adapter = fabricAdapter
 
         binding.buttonAdd.setOnClickListener {
-            startActivity(Intent(context, AddItemActivity::class.java))
+            startActivity(Intent(requireContext(), AddItemActivity::class.java))
         }
 
         loadItemsFromDatabase()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        fabricList = ArrayList()
     }
 
     private fun loadItemsFromDatabase() {
@@ -61,7 +66,7 @@ class FabricFragment : Fragment() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(context, "Failed to load data: ${error.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Failed to load data: ${error.message}", Toast.LENGTH_SHORT).show()
             }
         })
     }

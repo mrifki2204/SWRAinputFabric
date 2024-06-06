@@ -114,7 +114,7 @@
                 android:padding="8dp"
                 android:text="ID"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textViewType"
@@ -124,7 +124,7 @@
                 android:padding="8dp"
                 android:text="Type"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textViewColor"
@@ -134,7 +134,7 @@
                 android:padding="8dp"
                 android:text="Color"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textViewQuantity"
@@ -144,7 +144,24 @@
                 android:padding="8dp"
                 android:text="Qty (m)"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
 
         </TableRow>
     </TableLayout>

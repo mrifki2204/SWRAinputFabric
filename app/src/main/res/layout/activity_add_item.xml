@@ -47,11 +47,12 @@
         app:layout_constraintTop_toBottomOf="@id/editTextColor" />
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/buttonAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Save"
+        android:text="Add Data"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextQty" />

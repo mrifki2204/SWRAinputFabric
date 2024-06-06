@@ -19,6 +19,9 @@
         android:theme="@style/Theme.SRWA"
         tools:targetApi="31">
         <activity
+            android:name=".activity.EditFabricActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.AddItemActivity"
             android:exported="false" />
         <activity
