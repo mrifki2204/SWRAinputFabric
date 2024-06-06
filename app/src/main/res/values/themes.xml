@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SRWA" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange</item> <!-- Optional, depending on your use case -->
+        <item name="colorOnPrimary">@android:color/black</item> <!-- Ensuring text is visible on white -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="Theme.SRWA" parent="Base.Theme.SRWA">
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

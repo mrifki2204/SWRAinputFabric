@@ -1,0 +1,11 @@
+<!-- res/drawable/search_icon.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/searchicon"
+            android:gravity="center"
+            android:width="5dp"
+            android:height="5dp"
+        />
+    </item>
+</layer-list>

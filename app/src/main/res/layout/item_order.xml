@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/orderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline_background"
+                android:text="Order ID"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/outline_background"
+                android:layout_height="wrap_content"
+                android:textColor="#FFA500"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/orderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline_background"
+                android:text="Order date"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline_background"
+
+                android:textColor="#FFA500"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline_background"
+                android:text="Order status"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/outline_background"
+                android:layout_height="wrap_content"
+                android:textColor="#FFA500"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/shippingDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping destination"
+                android:background="@drawable/outline_background"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/outline_background"
+                android:layout_height="wrap_content"
+                android:textColor="#FFA500"
+                android:padding="8dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

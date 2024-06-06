@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dasboard"
+        android:icon="@drawable/grafikicon"
+        android:title="Dasboard" />
+    <item
+        android:id="@+id/navigation_input"
+        android:icon="@drawable/inputicon"
+        android:title="Input" />
+    <item
+        android:id="@+id/navigation_blank"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_production"
+        android:icon="@drawable/settingicon"
+        android:title="Production" />
+    <item
+        android:id="@+id/navigation_output"
+        android:icon="@drawable/exporticon"
+        android:title="Output" />
+</menu>

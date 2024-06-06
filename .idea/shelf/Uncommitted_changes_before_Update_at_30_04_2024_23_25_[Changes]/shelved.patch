@@ -1,0 +1,93 @@
+Index: app/src/main/res/layout/activity_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/bg_front\"\r\n    tools:context=\".LoginActivity\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\"\r\n        android:padding=\"14dp\">\r\n\r\n        <TextView\r\n            android:layout_marginTop=\"40dp\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:textAlignment=\"center\"\r\n            android:textSize=\"34sp\"\r\n            android:textStyle=\"bold\"\r\n            android:text=\"Login Sekarang\"/>\r\n\r\n        <ImageView\r\n            android:id=\"@+id/imageView\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"171dp\"\r\n            app:srcCompat=\"@drawable/logo\" />\r\n\r\n\r\n        <com.google.android.material.textfield.TextInputLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"10dp\"\r\n            app:boxBackgroundMode=\"outline\"\r\n            >\r\n            <EditText\r\n                android:id=\"@+id/email\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:hint=\"Alamat Email\"\r\n                android:inputType=\"textEmailAddress\"/>\r\n        </com.google.android.material.textfield.TextInputLayout>\r\n\r\n        <com.google.android.material.textfield.TextInputLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"10dp\"\r\n            app:boxBackgroundMode=\"outline\"\r\n            app:passwordToggleEnabled=\"true\"\r\n            >\r\n            <EditText\r\n                android:id=\"@+id/password\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:hint=\"Kata Sandi\"\r\n                android:inputType=\"textPassword\"/>\r\n        </com.google.android.material.textfield.TextInputLayout>\r\n\r\n        <Button\r\n            android:id=\"@+id/btn_login\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:backgroundTint=\"#FF0000\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:text=\"Masuk\"\r\n            />\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Apakah anda sudah memiliki akun?\"\r\n            android:textAlignment=\"center\"\r\n            android:layout_marginTop=\"20dp\"/>\r\n\r\n        <Button\r\n            android:id=\"@+id/btn_register\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:backgroundTint=\"@color/material_dynamic_primary70\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:text=\"Daftar\"\r\n            />\r\n    </LinearLayout>\r\n\r\n</ScrollView>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_login.xml b/app/src/main/res/layout/activity_login.xml
+--- a/app/src/main/res/layout/activity_login.xml	(revision cb493f2be25bc0cc716f303c5925a7dafdaf4733)
++++ b/app/src/main/res/layout/activity_login.xml	(date 1714494330565)
+@@ -1,11 +1,12 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
++<ScrollView
++    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@drawable/bg_front"
+-    tools:context=".LoginActivity">
++    tools:context=".activity.LoginActivity">
+ 
+     <LinearLayout
+         android:layout_width="match_parent"
+Index: app/src/main/res/layout/activity_register.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/bg_front\"\r\n    tools:context=\".RegisterActivity\">\r\n    \r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\"\r\n        android:padding=\"14dp\">\r\n\r\n        <TextView\r\n            android:layout_marginTop=\"40dp\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Daftar Sekarang\"\r\n\r\n            android:textAlignment=\"center\"\r\n            android:textSize=\"34sp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <ImageView\r\n            android:id=\"@+id/imageView\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"171dp\"\r\n            app:srcCompat=\"@drawable/logo\" />\r\n\r\n        <com.google.android.material.textfield.TextInputLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"20dp\"\r\n            app:boxBackgroundMode=\"outline\"\r\n            >\r\n            <EditText\r\n                android:id=\"@+id/full_name\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:hint=\"Nama Lengkap\"\r\n                android:inputType=\"textPersonName\"/>\r\n        </com.google.android.material.textfield.TextInputLayout>\r\n\r\n        <com.google.android.material.textfield.TextInputLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"10dp\"\r\n            app:boxBackgroundMode=\"outline\"\r\n            >\r\n            <EditText\r\n                android:id=\"@+id/email\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:hint=\"Alamat Email\"\r\n                android:inputType=\"textEmailAddress\"/>\r\n        </com.google.android.material.textfield.TextInputLayout>\r\n\r\n        <com.google.android.material.textfield.TextInputLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"10dp\"\r\n            app:boxBackgroundMode=\"outline\"\r\n            app:passwordToggleEnabled=\"true\"\r\n            >\r\n            <EditText\r\n                android:id=\"@+id/password\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:hint=\"Kata Sandi\"\r\n                android:inputType=\"textPassword\"/>\r\n        </com.google.android.material.textfield.TextInputLayout>\r\n\r\n        <com.google.android.material.textfield.TextInputLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"10dp\"\r\n            app:boxBackgroundMode=\"outline\"\r\n            app:passwordToggleEnabled=\"true\"\r\n            >\r\n            <EditText\r\n                android:id=\"@+id/password_conf\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:hint=\"Konfirmasi Kata Sandi\"\r\n                android:inputType=\"textPassword\"/>\r\n        </com.google.android.material.textfield.TextInputLayout>\r\n\r\n        <Button\r\n            android:id=\"@+id/btn_register\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:backgroundTint=\"#FF0000\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:text=\"Daftar\"\r\n            />\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Apakah anda sudah memiliki akun?\"\r\n            android:textAlignment=\"center\"\r\n            android:layout_marginTop=\"20dp\"/>\r\n\r\n        <Button\r\n            android:id=\"@+id/btn_login\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:backgroundTint=\"@color/material_dynamic_primary70\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:text=\"Login\"\r\n            />\r\n    </LinearLayout>\r\n\r\n</ScrollView>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_register.xml b/app/src/main/res/layout/activity_register.xml
+--- a/app/src/main/res/layout/activity_register.xml	(revision cb493f2be25bc0cc716f303c5925a7dafdaf4733)
++++ b/app/src/main/res/layout/activity_register.xml	(date 1714494330553)
+@@ -5,7 +5,7 @@
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@drawable/bg_front"
+-    tools:context=".RegisterActivity">
++    tools:context=".activity.RegisterActivity">
+     
+     <LinearLayout
+         android:layout_width="match_parent"
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <TextView\r\n        android:id=\"@+id/hello_world\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Hello World!\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/full_name\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Nama User\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/hello_world\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"/>\r\n\r\n    <TextView\r\n        android:id=\"@+id/email\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"email\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/full_name\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"/>\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision cb493f2be25bc0cc716f303c5925a7dafdaf4733)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1714494330559)
+@@ -4,7 +4,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".MainActivity">
++    tools:context=".activity.MainActivity">
+ 
+     <TextView
+         android:id="@+id/hello_world"
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleHome\" value=\"C:/Gradle\" />\r\n        <option name=\"gradleJvm\" value=\"jbr-17\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision cb493f2be25bc0cc716f303c5925a7dafdaf4733)
++++ b/.idea/gradle.xml	(date 1714494171335)
+@@ -1,10 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="testRunner" value="GRADLE" />
+-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="gradleHome" value="C:/Gradle" />
+         <option name="gradleJvm" value="jbr-17" />
+@@ -14,6 +13,7 @@
+             <option value="$PROJECT_DIR$/app" />
+           </set>
+         </option>
++        <option name="resolveExternalAnnotations" value="false" />
+       </GradleProjectSettings>
+     </option>
+   </component>
