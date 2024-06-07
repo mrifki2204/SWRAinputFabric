@@ -42,8 +42,9 @@ class FabricAdapter(private val fabricList: ArrayList<Fabric>, private val conte
         }
 
         holder.editButton.setOnClickListener {
-            val intent = Intent(context, EditFabricActivity::class.java)
-            intent.putExtra("fabricId", fabric.id)
+            val intent = Intent(context, EditFabricActivity::class.java).apply {
+                putExtra("fabricId", fabric.id)
+            }
             context.startActivity(intent)
         }
     }

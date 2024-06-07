@@ -46,11 +46,6 @@ class FabricFragment : Fragment() {
         loadItemsFromDatabase()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        fabricList = ArrayList()
-    }
-
     private fun loadItemsFromDatabase() {
         val database = FirebaseDatabase.getInstance().reference.child("fabrics")
         database.addValueEventListener(object : ValueEventListener {

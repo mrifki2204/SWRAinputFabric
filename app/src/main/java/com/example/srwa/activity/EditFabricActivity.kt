@@ -27,6 +27,7 @@ class EditFabricActivity : AppCompatActivity() {
         colorEditText = findViewById(R.id.editTextColor)
         quantityEditText = findViewById(R.id.editTextQty)
         saveButton = findViewById(R.id.buttonSave)
+        deleteButton = findViewById(R.id.buttonDelete)
 
         saveButton.setOnClickListener {
             editFabricInDatabase()
